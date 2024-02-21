@@ -1,0 +1,207 @@
+
+#hero-section-login{
+    margin-left: 100px;
+    margin-top: 150px;
+}
+#formh1{
+    margin-left: 20px;
+    font-size: 34px;
+    text-decoration: underline;
+}
+#super-nav{
+background-color: white; 
+width: 600px; 
+height: 700px;
+margin-top: 10px; padding: 20px;
+}
+#main-div {
+    width: 500px;
+    justify-content: center;
+    border: 1px solid rgb(0, 0, 0,0.50);
+    border-radius: 5px;
+    margin: 20px 0px;
+}
+#block{
+    display: none;
+    margin-top: 100px;
+    width: 500px;
+    justify-content: center;
+    border: 1px solid rgb(0, 0, 0,0.50);
+    border-radius: 5px;
+}
+#show{
+    margin: 20px;
+    color: blue;
+    font-size: 20px;
+    font-weight: 700px;
+}
+#regis{
+    width: 500px;
+    height: 60px;
+    background-color:rgba(143, 153, 178, 0.1) ;
+}
+#regis div{
+    float: left;
+    margin: 20px;
+}
+
+#facebook{
+
+  width: 400px;
+  background-color:rgb(37, 59, 115) ;
+  color: white;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 10px;
+}
+#facebook{
+
+}
+#google{
+  width: 400px;
+  background-color:rgb(101, 133, 212) ;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+
+}
+input{
+    width: 400px;
+    
+    padding: 20px; 
+    margin: 20px;
+    border-radius: 5px ;
+}
+#check {
+   display: flex;
+}
+#check p{
+  margin: 10px; 
+}
+#checkbox{
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    border-radius: 5px;    
+}
+#singin{
+    width: 440px;
+    color: white;
+    background-color: #3b76ef;
+    border-radius: 10px ;
+    padding: 10px; 
+    margin: 20px;}
+#lastLine{
+    justify-content: center;
+    display: flex;
+}
+#lastLine p:nth-child(1){
+    color: rgb(0, 0, 0,0.60);
+    margin-right: 20px;
+    font-size: 18px;
+}
+#lastLine p:nth-child(2){
+    color: black;
+    font-size: 18px;
+} 
+#lastLine2{
+    font-size: 18px;
+    color: rgb(0, 0, 0,0.60);
+    margin: -5px 0px 20px 0px ;
+}  
+@media(max-width:426px){
+    #hero-section-login{
+        margin-left: 100px;
+        margin-top: 150px;
+    }
+    #super-nav{
+    width: 260px; 
+    }
+    #main-div {
+        width: 250px;
+        margin: 20px 0px;
+    }
+    #regis{
+        width: 250px;
+        height: 60px;
+        background-color:rgba(143, 153, 178, 0.1) ;
+    }
+    #regis div{
+        float: left;
+        margin: 20px;
+    }
+    #facebook{
+        width: 200px;
+        margin: 20px 0px;
+        padding: 10px;
+      }
+      #google{
+        width: 200px;
+      }
+      input{
+          width: 180px;
+          padding: 20px; 
+          margin: 20px 0px;
+          border-radius: 5px ;
+      }
+      #singin{
+        width: 180px;
+        padding: 10px; 
+        margin: 20px 0px;}
+}
+@media(max-width:376px){
+    #super-nav{
+        width: 230px; 
+        }
+        #main-div {
+            width: 230px;
+            justify-content: center;
+            margin: 20px 0px;
+        }
+        #regis{
+            width: 230px;
+            height: 60px;
+            background-color:rgba(143, 153, 178, 0.1) ;
+        }
+}
+@media(max-width:321px){
+    #hero-section-login{
+        margin-left: 100px;
+        margin-top: 150px;
+    }
+    #super-nav{
+    width: 160px; 
+    }
+    #main-div {
+        width: 170px;
+        justify-content: center;
+        margin: 20px 0px;
+    }
+    #regis{
+        width: 170px;
+        height: 60px;
+        background-color:rgba(143, 153, 178, 0.1) ;
+    }
+    
+    #facebook{
+        width: 150px;
+        margin: 20px 0px;
+        padding: 10px;
+      }
+      #google{
+        width: 150px;
+      }
+      input{
+          width: 150px;
+          padding: 20px 0px; 
+          margin: 20px 0px;
+          border-radius: 5px ;
+      }
+      #singin{
+        width: 150px;
+        padding: 10px; 
+        margin: 20px 0px;}
+        #check p{
+            margin: 10px 0px; 
+          }
+} 

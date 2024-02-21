@@ -1,0 +1,58 @@
+
+#search-tabal{
+margin: 20px;
+}
+#filterSelect{
+    font-size: 20px;
+}
+label{
+    font-size: 20px;
+}
+#searchBtn{
+    font-size: 20px;
+    margin: 0px 0px 0px 10px;
+    background-color: rgb(5, 59, 116);
+    color: white;
+}
+#hero-section-table{
+    margin-left: 0px;
+    margin-top: 120px;
+}
+#tableh1{
+    margin-left: 250px;
+    font-size: 34px;
+    text-decoration: underline;
+}
+#super-div{
+    margin: 20px;
+    margin-left: 300px;
+    padding: 20px;
+    background-color: white;
+    height: 600px;
+    width: 1000px;
+}
+
+#showdata tr td{
+    width: 200px;
+}
+#showdata1  {
+position: sticky;
+top: 0px;
+z-index: 10;
+/* margin-left: 163px; */
+background-color: rgb(240, 167, 167);
+    
+}
+#showdata1 tr th{
+    width: 200px; 
+    background-color: rgb(29, 25, 25,0.2);   
+}
+#maintable{
+    margin-top: 30px;
+    height: 500px;
+    overflow-y: scroll;
+}
+#maintable #showdata{
+    margin-top: 0px;
+   
+}

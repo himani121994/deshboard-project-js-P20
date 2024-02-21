@@ -1,0 +1,908 @@
+html{
+    overflow-x: hidden;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+#aside{
+    background-color: rgba(9, 9, 9);
+    float: left;
+    width: 250px;
+    height: 100vh; 
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 20;
+    
+
+}
+img{
+    margin-top: 30px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+#aside ul{
+    color: white;
+    list-style: none;
+    margin-left: 0px;
+}
+#aside ul h1{
+    color: white;
+    list-style: none;
+    margin-left: 0px;
+}
+#aside ul li{
+    font-size: 28px;
+    /* border: 2px solid white; */
+    color: white;
+    list-style: none;
+    width: 200px;
+    height: 50px;
+    margin: 50px 10px;
+}
+#dropdown-content{
+    display: none;
+  position: absolute;
+  background-color: rgb(241, 241, 241,0.1);
+  /* min-width: 30px; */
+  box-shadow: 0px 0px 0px rgba(0,0,0.2);
+  z-index: 1;
+  margin: -50px 30px 10px -30px ;
+}
+#dropdown-content a{
+  color: black;
+  /* padding: 12px 16px; */
+  text-decoration: none;
+  display: block;
+}
+#dropdown-content a:hover { background-color: #ddd;}
+#list2:hover #dropdown-content {display: block;}
+
+
+#aside ul li{
+    font-size: 28px;
+    /* border: 2px solid white; */
+    color: white;
+    list-style: none;
+    width: 200px;
+    height: 50px;
+    margin: 50px 10px;
+}
+/* #aside ul li:hover{
+    background-color: white;
+    font-size: 30px;
+    color: black;
+    margin-left: -20px;
+    padding: 10px;
+} */
+/* #list1:hover{
+    background-color: white;
+    font-size: 30px;
+    color: black;
+} */
+#smallaside{
+    display: none;
+    background-color: rgba(9, 9, 9);
+    float: left;
+    width: 100px;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    
+}
+#smallaside img{
+    margin-top: 30px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+#smallaside ul h1{
+    color: white;
+    list-style: none;
+    margin-left: -15px;
+}
+#smallaside ul li{
+    color: white;
+    list-style: none;
+    margin: 50px 20px;
+}
+#bars{
+    position: fixed;
+    top: 5px;
+    left: 10px;
+    color: white;
+    display: none;
+    z-index: 20;
+}
+#closebar{
+    position: fixed;
+    top: 5px;
+    left: 10px;
+    color: white;
+    display: none;
+    z-index: 20;
+}
+
+/* ======================================== */
+#head{ 
+  display: flex;
+  background-color: rgb(246, 246, 246);
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  top: 0px;
+  left: 250px;
+  /* margin-bottom: 30px; */
+  
+}
+#deshboard{
+    font-size: 34px;
+    margin-left: 150px;
+}
+#img1 {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    margin: 10px 10px 0px 20px;
+}
+
+#img1:hover + #logoutBtn,
+#logoutBtn:hover {
+    display: block;
+}
+
+#logoutBtn {
+    margin: -5px 2px 5px 22px ;
+    cursor: pointer;
+    position: absolute;
+    background-color: rgb(233, 34, 37);
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    display: none;
+}
+
+#logoutBtn:hover {
+    background: #555;
+}
+
+#bell{
+    font-size: 30px;
+    margin: 25px 50px 25px 290px;
+}
+#showmsg {
+    margin-top: 20px;
+    margin-left: -10px;
+    display: none;
+    background-color: black;
+    position: absolute;
+}
+#showmsg tr td{
+    font-size: 20px;
+    width: 10px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#showmsg tr td:nth-child(2){
+    width: 200px;
+    color: white;
+}
+#red-notification{
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50px;
+    position: relative;
+    margin: -35px 0px 0px 10px;
+    z-index: 20;
+}
+#msg{
+    font-size: 30px;
+    margin: 25px 50px 25px 10px;
+}
+#search-icon{
+    margin: 20px 40px;
+    width: 300px;
+    background-color: #eaebee;
+    height: 60px;
+    border-radius: 40px;
+    font-size: 22px;
+  }
+  #search-icon1{
+    margin: 20px 100px;
+    width: 300px;
+    background-color: #eaebee;
+    height: 60px;
+    border-radius: 40px;
+    font-size: 22px;
+    display: none;
+  }
+#search-icon-i{
+    font-size: 22px;
+    margin: 0px 0px 0px -103px;
+  }
+/* =========================hero section================================== */
+#hero-section{
+    margin-left: 250px;
+    margin-top: 140px;
+}
+#background{
+    background-color: white;margin: 0px 20px 0px 20px;
+}
+#increas-fun{
+    display: grid;
+   grid-template-columns: auto auto auto auto;
+    margin-top: 30px;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+}
+#increas-fun div{
+    width: 250px;
+    height: 200px;
+    margin: 25px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#box1{ background-color: #3b76ef;}
+#box2{background-color: #63c7ff;}
+#box3{background-color: #a66dd4}
+#box4{background-color: #6dd4b1;}
+#increas-fun div:hover{
+background-color: rgb(59, 118, 239,0.5);
+}
+#increas-fun div h1::after{
+    content: ".00++";
+}
+#increas-fun div p{
+    color: white;
+    font-size: 18px;
+    margin: 10px;
+}
+#increas-fun div h1{
+    color: white;
+}
+#increas-fun div i{
+    color: white;
+    float: left;
+    margin: 0px -10px 0px 10px;
+    padding: 40px 0px 0px 10px;
+   
+}
+/* ========================== */
+
+/* =========chart========= */
+#chart-circle-div{
+    display: flex;
+    margin-top: 30px;
+}
+#char-div{
+    width: 600px; height: 400px;
+    margin: 30px;
+}
+#myChart{
+    background-color: #eaebee;
+}
+
+/* ==================circle================== */
+.circle-box{
+    width: 400px; height: 450px;
+    background-color: white;
+   
+    margin: 10px 30px 30px 30px;
+}
+.circle-text h3{
+    font-size: 22px;
+    margin: 20px 50px 50px 50px;
+    color: #024d81;
+}
+.circle-wrap{
+    margin: 0px 50px 50px 50px;
+    width: 300px;
+    height: 300px;
+    background: #e6e2e7;
+    border-radius: 50%;
+}
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    border-radius: 50%;
+}
+.circle-wrap .circle .mask{
+    clip: rect(0px, 300px, 300px, 150px);
+}
+.circle-wrap .circle .mask .fill{
+    clip: rect(0px, 150px, 300px, 0px);
+    background-color: #f7403b;
+}
+.circle-wrap .circle .mask .full,
+.circle-wrap .circle .fill{
+    animation: fill ease-in-out 3s;
+    transform: rotate(170deg);
+}
+@keyframes fill{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(100deg);
+    }
+}
+.circle-wrap .inside-circle{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    /* background: #fff; */
+     line-height: 250px; 
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    position: absolute;
+    font-weight: 700;
+    font-size: 2em;
+} 
+#last-div{
+    display: flex;
+}
+#showtable tr td{
+    width: 50px;
+    color: white;
+}
+#showtable tr td:nth-child(2){
+    width: 350px;
+}
+#showtable tr td:nth-child(3){
+    width: 100px;
+}
+#showtable tr td:nth-child(3) img{
+    margin-top: -3px;
+    width: 50px;
+    height: 50px;
+}
+#showdata1  {
+position: sticky;
+top: 0px;
+z-index: 0;
+background-color: rgb(38, 100, 177);  
+}
+#maintable1{
+    height: 300px;
+    margin-top: -10px;
+    margin-left: 20px;
+    background-color:#e6e2e7;
+}
+#maintable1 #showtable{
+    margin-top: 0px;
+}
+#plot-div{
+    width:600px;max-width:700px;
+    margin: -10px 0px 0px 55px;
+}
+#myPlot{
+    background-color: #ddd;
+}
+#Flast-div{
+    margin-left: 250px;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    background-color:#eaebee;
+    
+}
+
+/* ================================== */
+
+  @media(max-width:1041px){
+    #aside{
+        display: none;
+    }
+    #smallaside{
+        display: block;
+        width: 100px;
+    }
+    #head{ 
+        left: 100px;
+    }
+    #bars{
+        position: absolute;
+        top: 5px;
+        left: 10px;
+        color: white;
+        display: block;
+    }
+    #closebar{
+        position: absolute;
+        top: 5px;
+        left: 10px;
+        color: white;
+        display: none;
+    }
+    #smallaside img{
+        margin-top: 30px;
+        margin-left: -20px;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+    #smallaside ul h1{
+        font-size:18px;
+        color: white;
+        list-style: none;
+        margin-left: -20px;
+    }
+    #smallaside ul li{
+        margin: 50px 0px;
+    }
+    
+    /* =============================== */
+    #search-icon{
+        margin: 20px 5px;
+        width: 250px;
+        background-color: #eaebee;
+        height: 60px;
+        border-radius: 40px;
+        font-size: 22px;
+      }
+    #search-div i{
+        font-size: 22px;
+        margin: 0px 0px 0px -120px;
+      }
+    #bell{
+        font-size: 30px;
+        margin: 25px 50px 25px 165px;
+    }
+    #showmsg tr td:nth-child(2){
+        width: 180px;
+        color: white;
+    }
+    #msg{
+        font-size: 30px;
+        margin: 25px 50px 25px 10px;
+    } 
+    #img1{
+        width: 70px;
+        height: 70px;
+        border-radius: 50px;
+        margin: 10px 10px 10px 0px ;
+    } 
+    /* ===================================================== */
+    #background{
+        margin-top: 50px;
+    }
+    #increas-fun{
+        display: grid;
+       grid-template-columns: auto auto auto auto ;
+       justify-content: space-evenly;
+        margin-top: 20px;
+    }
+    #increas-fun div{
+        width: 190px;
+        height: 150px;
+        margin: 20px 10px;
+    }
+    #increas-fun div i{
+        font-size: 26px;
+        margin: -26px 5px 10px 10px;
+    }
+    #increas-fun div h1{
+        font-size:28px;
+        margin-left: 0px;
+    }
+    #hero-section{
+        margin-left: 100px;
+        margin-top: 120px;
+    }
+    #background{
+        margin: 10px;
+    }
+    #chart-circle-div{
+        display: block;
+    }
+    #char-div{
+        margin-left: 100px;
+        width: 700px;
+       
+    }
+    .circle-box{
+        margin-left: 10px;
+    }
+
+
+    #last-div{
+        display: block;
+    }
+    #showtable tr td:nth-child(2){
+        width: 300px;
+    }
+    #showtable tr td:nth-child(3){
+        width: 80px;
+    }
+    #maintable1{
+        margin-top: -400px;
+        margin-left: 405px;
+    }
+    #plot-div{
+        width: 700px;
+        max-width:600px;
+        margin: 150px 0px 0px 150px;
+    }
+    #myPlot{
+        width:100%;max-width:700px;
+        background-color:#eaebee;
+    }
+    #Flast-div {
+        margin: 112px;
+    }
+    #deshboard {
+        margin-left: 98px;
+        margin-right: -54px;
+    }
+}
+@media(max-width:769px){
+    #smallaside ul li{
+        margin: 50px 10px;
+    }
+    #search-icon {
+        margin: 16px 10px;
+        width: 200px;
+        height: 50px;
+        
+    }
+    #deshboard{
+        margin: 20px 20px 20px 22px;
+    }
+    #bell{
+        margin: 25px 30px 25px 50px;
+    }
+    #img1{
+        margin: 10px 20px 10px 0px ;
+    }
+    #showmsg tr td:nth-child(2){
+        width: 150px;
+        color: white;
+    }
+    #msg{
+        margin: 25px 30px 25px 10px;
+    }
+    #increas-fun{
+        display: grid;
+       grid-template-columns: auto auto ;
+        margin-top: 20px;
+    }
+    #increas-fun div{
+        width: 250px;
+        height: 150px;
+    }
+    #increas-fun div i{
+    margin: -26px 20px 10px 14px;
+    }
+    #hero-section{
+        margin-left: 100px;
+        
+    }
+    #background{
+        margin: 10px;
+    }
+    #char-div{
+        margin: 20px;
+        width: 600px;
+    }
+    #chart-circle-div{
+        display: block;
+    }
+    .circle-box{
+        margin-left: -50px;
+    }
+    #showtable tr td:nth-child(2){
+        width: 290px;
+    }
+    #showtable tr td:nth-child(3){
+        width: 80px;
+    }
+    #maintable1{
+        margin-top: -430px;
+        margin-left: 305px;
+    }
+    #plot-div{
+        display: none;
+    }
+    #Flast-div {
+        margin-top: 212px;
+        margin-left: 159px;
+    }
+    
+}
+@media(max-width:426px){
+    #search-icon{
+        display: none;
+    }
+    #search-icon1{
+        display: block;
+        margin: 20px 10px;
+        width: 100px;
+    }
+    #search-icon1 i{
+        margin: 10px 10px;
+        width: 10px;
+        height: 30px;
+        font-size: 25px;
+      } 
+    #img1{
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        margin: 20px 5px 10px 5px ;
+    } 
+    #logoutBtn {
+        margin: -8px 2px 5px -10px ;
+        font-size: 20px;
+        padding: 5px;
+    }
+    #bell{
+        font-size: 30px;
+        margin: 40px 5px 20px -40px;
+        font-size: 20px;
+    }
+    #red-notification{
+        width: 10px;
+        height: 10px;
+        margin: -25px 0px 0px 6px;
+    }
+    #showmsg {
+        margin-left: -65px;
+    }
+    #showmsg tr td:nth-child(2){
+        width: 100px;
+        color: white;
+    }
+    #msg{
+        font-size: 30px;
+        margin: 40px 10px 25px -10px;
+        font-size: 20px;
+    }
+    
+    #increas-fun{
+        display: grid;
+       grid-template-columns: auto;
+       justify-content: space-evenly;
+        margin-top: 20px;
+    }
+    #increas-fun div{
+        width: 230px;
+        height: 140px;
+    }
+    #increas-fun div i{
+        margin: -40px -20px 0px 14px;
+    }
+    #increas-fun div p{
+       margin: 5px;
+    }
+    #increas-fun div h1{
+        margin-top: 10px;
+        font-size: 28px;
+    }
+    #char-div{
+        margin: 10px;
+        width: 290px;
+        height: 200px;
+    }
+    .circle-box{
+        margin-left: 10px;
+        width: 290px; height: 300px;
+    }
+    .circle-wrap{
+        margin: -30px 50px 50px 50px;
+        width: 200px;
+        height: 200px;
+        background: #e6e2e7;
+        border-radius: 50%;
+    }
+    .circle-wrap .circle .mask,
+    .circle-wrap .circle .fill{
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        border-radius: 50%;
+    }
+    .circle-wrap .inside-circle {
+        width: 160px;
+        height: 160px;
+        line-height: 160px;
+    }
+    .circle-wrap .circle .mask{
+        clip: rect(0px, 200px, 200px, 150px);
+    }
+    #deshboard {
+        margin: 0px 10px 20px 8px;
+        font-size: 22px;
+    }
+
+    #last-div{
+        display: block;
+    }
+    
+    #showtable tr td:nth-child(2){
+        width: 290px;
+    }
+    #showtable tr td:nth-child(3){
+        width: 80px;
+    }
+    #maintable1{
+        margin-top: -35px;
+        margin-left: 1px;
+    }
+    #plot-div{
+       display: none;
+    }
+   
+    
+    
+}
+@media(max-width:377px){
+    #img1{
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        margin: 20px 5px 10px -15px ;
+    } 
+    #msg{
+        font-size: 30px;
+        margin: 40px 10px 25px -45px;
+        font-size: 20px;
+    }
+    #bell{
+        font-size: 30px;
+        margin: 40px 5px 20px -70px;
+        font-size: 20px;
+    }
+    #red-notification{
+        width: 10px;
+        height: 10px;
+        margin: -25px 0px 0px 6px;
+    }
+    #logoutBtn {
+        margin: -5px 2px 5px -10px ;
+        font-size: 18px;
+        padding: 0px;
+    } 
+    #search-icon {
+        height: 40px;
+        margin: 30px 0px 20px 0px;
+        width: 100px; 
+    } 
+    #showmsg {
+        margin-left: -75px;
+    }
+    #char-div{
+        margin: 10px;
+        margin-bottom: 30px;
+        width: 240px;
+        height: 140px;
+    }
+    .circle-box{
+        margin-left: 10px;
+        width: 244px; height: 300px;
+    }
+    .circle-wrap{
+        margin: -30px 50px 50px 20px;
+        width: 200px;
+        height: 200px;
+        background: #e6e2e7;
+        border-radius: 50%;
+    }
+    .circle-wrap .circle .mask,
+    .circle-wrap .circle .fill{
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        border-radius: 50%;
+    }
+    .circle-wrap .inside-circle {
+        width: 60px;
+        height: 60px;
+        line-height: 160px;
+    }
+    .circle-wrap .circle .mask{
+        clip: rect(0px, 200px, 200px, 150px);
+    }
+    #deshboard {
+        margin: 0px 10px 20px 8px;
+        font-size: 22px;
+    }
+    #maintable1{
+        margin-top: -10px;
+        margin-left: 1px;
+    }
+    #Flast-div{
+        margin: 0px 0px 0px 100px;
+    }
+}
+@media(max-width:321px){
+    #img1{
+        width: 30px;
+        height: 30px;
+        margin: 34px 0px 0px -5px ;
+    }
+    
+    #search-icon {
+        width: 100px;
+        height: 40px;
+    }
+    #search-icon i{
+        margin: 8px;
+    }
+    #logoutBtn {
+        margin: 10px 2px 5px -50px ;
+        font-size: 14px;
+        padding: 0px;
+    } 
+    #msg{
+        margin: 40px 5px 20px -29px;
+    }
+    #bell{
+        margin: 40px 5px 20px -50px;
+    }
+    #showmsg {
+        margin-left: -90px;
+    }
+    #increas-fun div{
+        width: 190px;
+        height: 140px;
+    }
+    #char-div{
+        margin-left: 2px;
+        width: 190px; height: 150px;
+        overflow-x: scroll;
+    }
+    .circle-box{
+        margin-left: 10px;
+        width: 190px; height: 350px;
+    }
+    .circle-wrap{
+        margin: -30px 0px 50px -11px;
+        width: 200px;
+        height: 200px;
+        background: #e6e2e7;
+        border-radius: 50%;
+    }
+    .circle-wrap .circle .mask,
+    .circle-wrap .circle .fill{
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        border-radius: 50%;
+    }
+    .circle-wrap .inside-circle {
+        width: 60px;
+        height: 60px;
+        line-height: 160px;
+    }
+    .circle-wrap .circle .mask{
+        clip: rect(0px, 200px, 200px, 150px);
+    }
+    #deshboard {
+        margin: 0px 0px 20px -25px;
+        font-size: 22px;
+    }
+    #maintable1{
+        margin-top: -10px;
+        margin-left: px;
+        display: none;
+    }
+    #Flast-div{
+        margin: 0px 0px 0px 100px;
+    }
+    
+}
+
+
+
+
