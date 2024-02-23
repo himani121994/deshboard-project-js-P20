@@ -71,6 +71,14 @@ setInterval(runningValue,50);
   function logOut(){
     document.getElementById('img').src = "Google-Contacts-Wikipedia.png";
     document.getElementById('img1').src = "Google-Contacts-Wikipedia.png";
+    document.getElementById('img1').style.marginLeft = "500px";
+    document.getElementById('bell-div').style.display = "none";
+    document.getElementById('aside-name').style.display = "none";
+    document.getElementById('msg-div').style.display = "none";
+    document.getElementById('hero-section').style.display = "none";
+    document.getElementById('logoutBtn').style.display = "none";
+    document.getElementById('hero-section-logout').style.display = "block";
+
   }
   function msg(){ 
     document.querySelector('#showmsg').style.display='block';
@@ -156,4 +164,30 @@ const data = [{
 const layout = {title:"World Wide Wine Production"};
 
 Plotly.newPlot("myPlot", data, layout);
-        
+
+
+
+
+function login() {
+  let email1 = document.getElementById('email1').value;
+  let pass1 = document.getElementById('password1').value;
+  if (email1.trim() === "") {
+      showError('#error_email', "Please enter your email");
+      return false;
+  } else if (!(email1.includes('@gmail.com') || email1.includes('@yahoo.com') || email1.includes('@outlook.com'))) {
+      showError('#error_email', "Please enter a valid email");
+      return false;
+   } else if(!pass1.match(/[1234567890]/)){
+         alert("password should be storng ");
+        return false;
+
+  } else if (!checkPasswordStrength(pass1)) {
+      showError('#error_password', "Password should be strong");
+      return false;
+  } else {
+      console.log(email1, pass1);
+      alert("LogIn SUCCESSFULLY");
+      return false;
+  }
+   
+ }

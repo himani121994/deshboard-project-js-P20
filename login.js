@@ -84,6 +84,9 @@ function show() {
     } else if (!(email.includes('@gmail.com') || email.includes('@yahoo.com') || email.includes('@outlook.com'))) {
         showError('#error_email', "Please enter a valid email");
         return false;
+    } else if(!pass.match(/[1234567890]/)){
+        alert("password should be storng ");
+       return false;
     } else if (!checkPasswordStrength(pass)) {
         showError('#error_password', "Password should be strong");
         return false;

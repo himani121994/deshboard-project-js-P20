@@ -17,7 +17,7 @@
   <aside id="aside">
     <ul>
       <img id="img" src="th(9).jpg" alt="">
-      <h1>Himani Bhimte</h1>
+      <h1 id="aside-name">Himani Bhimte</h1>
       <li id="list1"><a style="text-decoration: none;color: white;" href="index.html">Home</a></li>
       <li id="list2"><a style="text-decoration: none;color: white;" href="login.html">forms</a></li>
       <li id="list3"><a style="text-decoration: none;color: white;" href="table.html">Table</a></li>
@@ -49,11 +49,11 @@
       <div>
         <h1 id="deshboard">Dashboard</h1>
       </div>
-      <div><i id="bell" class="fa-regular fa-bell">
+      <div id="bell-div"><i id="bell" class="fa-regular fa-bell">
           <div id="red-notification"></div>
           <table id="showmsg" border="2px" cellpadding="10px" cellspacing="10px"></table>
         </i></div>
-      <div><i id="msg" class="fa-solid fa-envelope"></i></div>
+      <div id="msg-div"><i id="msg" class="fa-solid fa-envelope"></i></div>
       <div><img id="img1" src="th(9).jpg" alt="">
         <button id="logoutBtn" onclick="logOut()">log out</button>
       </div>
@@ -136,13 +136,26 @@
       </div>
     </div>
     </div>
-    
+      <center>
+        <div id="Flast-div" >2020 © Influence - Designed by Dashboard</div></center>
   </section>
-  <center>
-    <div id="Flast-div" >2020 © Influence - Designed by Dashboard</div></center>
   
-
-
+  <section id="hero-section-logout">
+    <center>
+    <div id="background-logout">
+      <h1>Login </h1>
+      <form>
+        <input id="email1" type="text" placeholder="Enter gmail">
+        <div id="error_email"></div>
+        <input id="password1" type="text" placeholder="Password">
+        <div id="error_password"></div>
+        <button id="singin" onclick="return login()">
+          <a style="text-decoration: none; color: white;" href="index.html">log in</a>
+        </button>
+    </form>
+    </div>
+  </center>
+</section>
   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
     crossorigin="anonymous"></script>
   <script src="home.js"></script>

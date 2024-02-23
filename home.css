@@ -391,7 +391,8 @@ background-color: rgb(38, 100, 177);
     background-color: #ddd;
 }
 #Flast-div{
-    margin-left: 250px;
+    margin-left: 0px;
+    font-size: 22px;
     margin-top: 80px;
     margin-bottom: 40px;
     background-color:#eaebee;
@@ -539,7 +540,7 @@ background-color: rgb(38, 100, 177);
         background-color:#eaebee;
     }
     #Flast-div {
-        margin: 112px;
+        margin: 35px
     }
     #deshboard {
         margin-left: 98px;
@@ -615,8 +616,8 @@ background-color: rgb(38, 100, 177);
         display: none;
     }
     #Flast-div {
-        margin-top: 212px;
-        margin-left: 159px;
+        margin-top: 151px;
+        margin-left: 100px;
     }
     
 }
@@ -742,8 +743,11 @@ background-color: rgb(38, 100, 177);
     #plot-div{
        display: none;
     }
-   
-    
+    #Flast-div {
+        margin-top: 173px;
+        margin-left: 51px;
+        margin-bottom: 15px;
+    }
     
 }
 @media(max-width:377px){
@@ -751,16 +755,16 @@ background-color: rgb(38, 100, 177);
         width: 50px;
         height: 50px;
         border-radius: 50px;
-        margin: 20px 5px 10px -15px ;
+        margin: 20px 5px 10px -25px ;
     } 
     #msg{
         font-size: 30px;
-        margin: 40px 10px 25px -45px;
+        margin: 40px 10px 25px -55px;
         font-size: 20px;
     }
     #bell{
         font-size: 30px;
-        margin: 40px 5px 20px -70px;
+        margin: 40px 5px 20px -80px;
         font-size: 20px;
     }
     #red-notification{
@@ -822,7 +826,7 @@ background-color: rgb(38, 100, 177);
         margin-left: 1px;
     }
     #Flast-div{
-        margin: 0px 0px 0px 100px;
+        margin: 308px 0px 20px -7px;
     }
 }
 @media(max-width:321px){
@@ -898,11 +902,30 @@ background-color: rgb(38, 100, 177);
         display: none;
     }
     #Flast-div{
-        margin: 0px 0px 0px 100px;
+        margin: 0px 0px 0px -2px;
     }
     
 }
-
+#hero-section-logout{
+margin-left: 200px;
+margin-top: 150px;
+margin-bottom: 50px;
+display: none;
+}
+input{
+    width: 400px;
+    padding: 20px; 
+    margin: 20px;
+    border-radius: 5px ;
+}
+#singin{
+    width: 440px;
+    color: white;
+    background-color: #3b76ef;
+    border-radius: 10px ;
+    padding: 10px; 
+    margin: 20px;
+}
 
 
 
