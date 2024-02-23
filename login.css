@@ -137,13 +137,11 @@ input{
       #google{
         width: 200px;
       }
-      input{
-          width: 180px;
-          padding: 20px; 
-          margin: 20px 0px;
-          border-radius: 5px ;
-      }
-      #singin{
+      #main-div input{
+        width: 180px;
+        margin: 20px 0px;
+    }
+    #main-div #singin{
         width: 180px;
         padding: 10px; 
         margin: 20px 0px;}
@@ -162,6 +160,7 @@ input{
             height: 60px;
             background-color:rgba(143, 153, 178, 0.1) ;
         }
+        
 }
 @media(max-width:321px){
     #hero-section-login{

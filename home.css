@@ -551,12 +551,20 @@ background-color: rgb(38, 100, 177);
     #smallaside ul li{
         margin: 50px 10px;
     }
-    #search-icon {
-        margin: 16px 10px;
-        width: 200px;
-        height: 50px;
-        
+    #search-icon{
+        display: none;
     }
+    #search-icon1{
+        display: block;
+        margin: 20px 10px;
+        width: 200px;
+    }
+    #search-icon1 i{
+        margin: 10px 10px;
+        width: 10px;
+        height: 30px;
+        font-size: 25px;
+      }
     #deshboard{
         margin: 20px 20px 20px 22px;
     }
@@ -902,7 +910,8 @@ background-color: rgb(38, 100, 177);
         display: none;
     }
     #Flast-div{
-        margin: 0px 0px 0px -2px;
+        margin: -15px 0px 10px -2px;
+        font-size: 20px;
     }
     
 }
